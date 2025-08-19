@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttam Singh - Automation Specialist & QA Infrastructure Expert</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-particles"></div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">US</div>
+            <div class="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Three.js Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-name">Uttam Singh</span>
+                    <span class="hero-cursor">_</span>
+                </h1>
+                <p class="hero-subtitle">Automation Specialist & QA Infrastructure Expert</p>
+                <div class="hero-description">
+                    <p>Building robust test automation frameworks and CI/CD pipelines</p>
+                    <p>Transforming manual processes into intelligent automation solutions</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="30">0</span>
+                        <span class="stat-label">CI/CD Pipelines</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="36">0</span>
+                        <span class="stat-label">Test Suites</span>
+                    </div>
+                </div>
+                <button class="btn btn--primary cta-button" onclick="scrollToSection('about')">
+                    Explore My Work
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about automation and quality engineering</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Software Development Engineer in Test with intensive experience in internal tooling 
+                        for automation and process optimization. Currently at Bobble AI, I specialize in building 
+                        scalable QA infrastructure and creating comprehensive test automation frameworks.
+                    </p>
+                    <p>
+                        My expertise spans across test automation, CI/CD pipeline development, and quality metrics 
+                        implementation. I've successfully reduced defect leakage by 15% through real-time monitoring 
+                        and alerts, while optimizing build times by 30%.
+                    </p>
+                    <div class="achievements-highlight">
+                        <div class="achievement-item">
+                            <h4>NASA Asteroid Discovery</h4>
+                            <p>Confirmed discovery of asteroid 2019-MR8 under NASA monitoring</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>Patent Holder</h4>
+                            <p>Designed patented benchmarking test suite for IME keyboards</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>Team Mentor</h4>
+                            <p>Mentored 4 QA engineers to SDETs, driving automation excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-icon">💻</div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="95">Python</div>
+                        <div class="skill-item" data-skill="90">Java</div>
+                        <div class="skill-item" data-skill="85">JavaScript</div>
+                        <div class="skill-item" data-skill="88">SQL</div>
+                        <div class="skill-item" data-skill="80">Bash</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">🔧</div>
+                    <h3>Automation Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="95">Selenium</div>
+                        <div class="skill-item" data-skill="90">Appium</div>
+                        <div class="skill-item" data-skill="92">REST Assured</div>
+                        <div class="skill-item" data-skill="88">TestNG</div>
+                        <div class="skill-item" data-skill="85">PyTest</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">⚙️</div>
+                    <h3>DevOps & CI/CD</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="93">Jenkins</div>
+                        <div class="skill-item" data-skill="90">Docker</div>
+                        <div class="skill-item" data-skill="85">Kubernetes</div>
+                        <div class="skill-item" data-skill="88">Git</div>
+                        <div class="skill-item" data-skill="82">Linux</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon">🗄️</div>
+                    <h3>Databases & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="88">PostgreSQL</div>
+                        <div class="skill-item" data-skill="85">MySQL</div>
+                        <div class="skill-item" data-skill="90">Postman</div>
+                        <div class="skill-item" data-skill="87">Jira</div>
+                        <div class="skill-item" data-skill="83">Firebase</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey in automation and quality engineering</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Development Engineer in Test</h3>
+                            <div class="timeline-company">Bobble AI • Gurgaon</div>
+                            <div class="timeline-duration">Dec 2021 - Present</div>
+                        </div>
+                        <div class="timeline-achievements">
+                            <ul>
+                                <li>Built 30+ containerized CI/CD pipelines using Jenkins, Docker, Appium, and REST Assured</li>
+                                <li>Integrated self-healing automation with DOM inference using Healenium and Postgres</li>
+                                <li>Developed keyboard benchmarking IME Test Suite for automation</li>
+                                <li>Implemented real-time crash, API, and functionality alerts, reducing defect leakage by 15%</li>
+                                <li>Optimized Jenkins CI/CD pipelines, reducing build times by 30%</li>
+                                <li>Implemented security testing in CI flows using MobSF, SonarCube and MITM</li>
+                                <li>Mentored 4 QA engineers to SDETs, driving 36 automated test suites</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Machine Learning SE Intern</h3>
+                            <div class="timeline-company">Ignitus • Remote</div>
+                            <div class="timeline-duration">July 2021 - November 2021</div>
+                        </div>
+                        <div class="timeline-achievements">
+                            <ul>
+                                <li>Conducted research on Curse of Dimensionality using PCA</li>
+                                <li>Designed interactive e-learning content for LMS</li>
+                                <li>Developed Python-based software modules</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Key automation and infrastructure projects</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Backend Testing Framework for Microservices</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">REST Assured</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Designed and implemented a generic, scalable backend testing framework for automating 
+                        validation of microservices with API functionality validation, database integrity checks, 
+                        and performance testing.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">API Validation</div>
+                        <div class="highlight-item">DB Integrity</div>
+                        <div class="highlight-item">Performance Testing</div>
+                        <div class="highlight-item">CI/CD Integration</div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Scalable CI/CD Pipeline Ecosystem</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Next.js</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Orchestrated 30+ containerized pipelines with JSON outputs, MongoDB benchmarking, 
+                        and Next.js dashboards for accelerated releases and real-time monitoring.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">30+ Pipelines</div>
+                        <div class="highlight-item">Real-time Dashboards</div>
+                        <div class="highlight-item">Automated Benchmarking</div>
+                        <div class="highlight-item">Containerized Architecture</div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Korean Transliteration Language Model</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Developed a romanizer for Korean learners to transliterate Korean strings into English 
+                        with consonant assimilation rules and hyphenation for clarity.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">Consonant Rules</div>
+                        <div class="highlight-item">Double Consonants</div>
+                        <div class="highlight-item">Hyphenation</div>
+                        <div class="highlight-item">Language Model</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss automation opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:uttam6201@gmail.com">uttam6201@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+918881799763">+91-888-1799-763</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/uttambeingprofessional" target="_blank">uttambeingprofessional</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐙</div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/uttamoffline" target="_blank">uttamoffline</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">
+                        Send Message
+                        <span class="btn-glow"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Uttam Singh. Built with passion for automation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
